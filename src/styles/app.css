@@ -1,0 +1,149 @@
+body {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #fefae0;
+}
+
+.main-header {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main-nav ul {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-left: 24px;
+}
+
+.main-nav ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-nav .buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-left: auto;
+}
+
+.main-nav .buttons-wrapper a {
+  text-decoration: none;
+}
+
+.button-primary {
+  color: #606c38;
+  border: 1px solid #606c38;
+  border-radius: 8px;
+  padding: 4px 16px;
+}
+
+.button-secondary {
+  color: #fff;
+  border: 1px solid #bc6c25;
+  background-color: #bc6c25;
+  border-radius: 8px;
+  padding: 4px 16px;
+}
+
+.hero-section {
+  background-image: url("../assets/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 96px;
+  padding-bottom: 180px;
+}
+
+.hero-section-content {
+  color: #fff;
+  width: 90%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section-content h1 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-section-content p {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.hero-section-content a {
+  color: #fff;
+  border: 1px solid #bc6c25;
+  background-color: #bc6c25;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.products-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 60px;
+  gap: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.product-card {
+  text-decoration: none;
+  color: #000;
+  background-color: #ffffff40;
+  padding: 12px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-image {
+  border-radius: 8px;
+}
+
+.product-infos-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

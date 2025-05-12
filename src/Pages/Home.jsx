@@ -1,34 +1,54 @@
+import Header from "../Components/Header";
+import Hero from "../Components/Hero";
+import ProductCard from "../Components/ProductCard";
+
+const products = [
+  {
+    src: "/fleur-3.png",
+    alt: "une belle fleur",
+    name: "Une orchidée",
+    price: 18,
+    url: "#",
+  },
+  {
+    src: "/fleur-4.png",
+    alt: "une belle fleur",
+    name: "Une orchidée",
+    price: 18,
+    url: "#",
+  },
+  {
+    src: "/fleur-5.png",
+    alt: "une belle fleur",
+    name: "Une orchidée",
+    price: 18,
+    url: "#",
+  },
+];
+
 function Page() {
   return (
     <>
-      <header>
-        <img src="/src/assets/react.svg" alt="logo en faite" />
-
-        <nav>
-          <a className="link" href="/Home">
-            Home
-          </a>
-          <a className="link" href="/Shop">
-            Shop
-          </a>
-          <a className="link" href="/Sales">
-            Sales
-          </a>
-          <a className="link" href="/About">
-            About
-          </a>
-          <a className="link" href="/Contact">
-            Contact
-          </a>
-        </nav>
-        <div className="auth-btns">
-          <button className="login-btn">Se connecter</button>
-          <button className="register-btn">S'inscrire</button>
+      <Header />
+      <Hero />
+      <section className="products-section">
+        <div className="products-section-header">
+          <h2>Spécial fêtes des Mères</h2>
+          <a href="#">Voir plus</a>
         </div>
-      </header>
-      <div>
-        <img src="/src/assets/hero-banner.png" alt="" />
-      </div>
+        <div className="products-wrapper">
+          {products.map((product, i) => (
+            <ProductCard
+              src={product.src}
+              alt={product.alt}
+              name={product.name}
+              price={product.price}
+              url={product.url}
+              key={i}
+            />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
